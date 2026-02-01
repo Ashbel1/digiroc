@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import abimg from '../../images/about/ab2.png'
+import abimg from '../../images/slider/one.jpg'
 
 const ClickHandler = (props) => {
     window.scrollTo(10, 0);

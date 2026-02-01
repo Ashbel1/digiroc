@@ -316,7 +316,7 @@
 #0.9	testimonials-section
 --------------------------------------------------------------*/
 .testimonials-section {
-	background-color: #434952;
+	background-color: $theme-primary-color;
 	text-align: center;
 
 	.testimonials-area {
@@ -623,7 +623,7 @@
 	}
 
 	.bg {
-		@include background-style("../../images/cta-team-bg.jpg", center top, cover, no-repeat, local);
+		@include background-style("../../images/slider/one.jpg", center top, cover, no-repeat, local);
 		width: 100%;
 		height: 70%;
 		position: absolute;

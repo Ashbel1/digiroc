@@ -2,11 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import pimg1 from '../../images/partners/img-1.png'
-import pimg2 from '../../images/partners/img-2.png'
-import pimg3 from '../../images/partners/img-3.png'
-import pimg4 from '../../images/partners/img-4.png'
-import pimg5 from '../../images/partners/img-2.png'
+import pimg1 from '../../images/slider/one.jpg'
+import pimg2 from '../../images/slider/one.jpg'
+import pimg3 from '../../images/slider/one.jpg'
+import pimg4 from '../../images/slider/one.jpg'
+import pimg5 from '../../images/slider/one.jpg'
 
 const partners = [
     {

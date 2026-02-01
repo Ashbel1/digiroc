@@ -115,7 +115,7 @@
 
 		&:before {
 			content: "";
-			@include background-style("../../images/about-s2-bg.jpg", center center, auto, no-repeat, local);
+			@include background-style("../../images/slider/one.jpg", center center, auto, no-repeat, local);
 			width: 378px;
 			height: 523px;
 			position: absolute;
@@ -171,7 +171,7 @@
 	}
 
 	.services-grids .grid:hover {
-		@include background-style("../../images/service-bg.jpg", center 0, auto, no-repeat, local);
+		@include background-style("../../images/slider/one.jpg", center 0, auto, no-repeat, local);
 	}
 
 	.services-grids .grid {
@@ -298,12 +298,23 @@
 		}
 
 		.left-col {
-			@include background-style("../../images/contact-bg.jpg", center center, cover, no-repeat, local);			
+			@include background-style("../../images/slider/one.jpg", center center, cover, no-repeat, local);			
 			float: left;
 			height: 100%;
 			position: absolute;
 			left: 0;
 			top: 0;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.3);
+				z-index: 0;
+			}
 
 			@include media-query(991px) {
 				float: none;

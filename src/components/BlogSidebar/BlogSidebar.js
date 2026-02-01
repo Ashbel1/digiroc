@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Services from '../../api/service';
-import about from '../../images/blog/about-widget.jpg'
+import about from '../../images/slider/one.jpg'
 import blogs from '../../api/blogs'
 
 const SubmitHandler = (e) => {

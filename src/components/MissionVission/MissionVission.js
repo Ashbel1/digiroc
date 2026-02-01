@@ -1,7 +1,7 @@
 import React from "react";
-import abimg1 from '../../images/about/img-1.jpg'
-import abimg2 from '../../images/about/img-2.jpg'
-import abimg3 from '../../images/about/img-3.jpg'
+import abimg1 from '../../images/slider/one.jpg'
+import abimg2 from '../../images/slider/one.jpg'
+import abimg3 from '../../images/slider/one.jpg'
 
 
 const MissionVission = () => {

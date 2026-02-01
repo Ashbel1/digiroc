@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import blog3 from '../../images/blog-details/comments-author/img-1.jpg'
-import blog4 from '../../images/blog-details/comments-author/img-2.jpg'
-import blog5 from '../../images/blog-details/comments-author/img-3.jpg'
-import blog6 from '../../images/blog-details/author.jpg'
+import blog3 from '../../images/slider/one.jpg'
+import blog4 from '../../images/slider/one.jpg'
+import blog5 from '../../images/slider/one.jpg'
+import blog6 from '../../images/slider/one.jpg'
 import blogs from '../../api/blogs';
 import { useParams } from 'react-router-dom'
 import BlogSidebar from '../BlogSidebar/BlogSidebar.js'

@@ -1,5 +1,5 @@
 import React from 'react'
-import abimg from '../../images/about-2.jpg'
+import abimg from '../../images/slider/one.jpg'
 import VideoModal from '../ModalVideo/VideoModal'
 
 

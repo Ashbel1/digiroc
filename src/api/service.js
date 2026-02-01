@@ -1,9 +1,9 @@
-import simg from '../images/service-single/img-1.jpg'
-// import simg2 from '../images/service-single/img-2.jpg'
-import simg3 from '../images/service-single/img-3.jpg'
-import simg4 from '../images/service-single/img-4.jpg'
-// import simg5 from '../images/service-single/img-5.jpg'
-// import simg6 from '../images/service-single/img-3.jpg'
+import simg from '../images/slider/one.jpg'
+// import simg2 from '../images/slider/one.jpg'
+import simg3 from '../images/slider/one.jpg'
+import simg4 from '../images/slider/one.jpg'
+// import simg5 from '../images/slider/one.jpg'
+// import simg6 from '../images/slider/one.jpg'
 
 
 const Services = [
