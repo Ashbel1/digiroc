@@ -40,10 +40,11 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
-          <Route path="home-2" element={<HomePage2 />} />
+          {/* All home variants disabled - using default home only */}
+          {/* <Route path="home-2" element={<HomePage2 />} />
           <Route path="home-3" element={<HomePage3 />} />
           <Route path="home-4" element={<HomePage4 />} />
-          <Route path="home-5" element={<HomePage5 />} />
+          <Route path="home-5" element={<HomePage5 />} /> */}
           <Route path="about" element={<AboutPage />} />
           <Route path="services" element={<ServicePage />} />
           <Route path="services-s2" element={<ServicePageS2 />} />

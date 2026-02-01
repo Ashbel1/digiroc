@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
-import { removeFromCart } from "../../store/actions/action";
+// import { removeFromCart } from "../../store/actions/action";
 
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
-    const [cartActive, setcartState] = useState(false);
+    // const [cartActive, setcartState] = useState(false);
 
     const SubmitHandler = (e) => {
         e.preventDefault()
@@ -18,7 +18,7 @@ const Header = (props) => {
         window.scrollTo(10, 0);
     }
 
-    const { carts } = props;
+    // const { carts } = props;
 
     return (
         <header id="header" className={`site-header ${props.hclass}`}>
@@ -32,15 +32,8 @@ const Header = (props) => {
                         <button className="close-navbar"><i className="ti-close"></i></button>
 
                         <ul className="nav navbar-nav mb-2 mb-lg-0">
-                            <li className="menu-item-has-children">
+                            <li>
                                 <Link onClick={ClickHandler} to="/">Home</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/home">Home Default</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/home-2">Home style 2</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/home-3">Home style 3</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/home-4">Home static hero</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/home-5">Home static hero box</Link></li>
-                                </ul>
                             </li>
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/">Pages</Link>
@@ -51,6 +44,9 @@ const Header = (props) => {
                                     <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
                                     <li><Link onClick={ClickHandler} to="/team-single/Morkal-Akunda">Team Single</Link></li>
                                     <li><Link onClick={ClickHandler} to="/404">404</Link></li>
+                                </ul>
+                            </li>
+                                    {/* Shop menu - Cart functionality disabled for now
                                     <li className="menu-item-has-children">
                                         <Link onClick={ClickHandler} to="/">Shop</Link>
                                         <ul className="sub-menu">
@@ -60,8 +56,7 @@ const Header = (props) => {
                                             <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
                                         </ul>
                                     </li>
-                                </ul>
-                            </li>
+                                    */}
                             <li className="menu-item-has-children">
                                 <Link onClick={ClickHandler} to="/">Services</Link>
                                 <ul className="sub-menu">
@@ -100,6 +95,7 @@ const Header = (props) => {
 
                     <div className="cart-search-contact">
 
+                        {/* SEARCH FUNCTIONALITY - DISABLED FOR NOW
                         <div className="header-search-form-wrapper">
                             <button onClick={() => setMenuState(!menuActive)} className="search-toggle-btn"><i
                                 className={`fi ti-search ${menuActive ? "ti-close" : "fi "}`}></i></button>
@@ -114,7 +110,9 @@ const Header = (props) => {
                                 </form>
                             </div>
                         </div>
+                        */}
 
+                        {/* MINI CART FUNCTIONALITY - DISABLED FOR NOW
                         <div className="mini-cart">
                             <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
                                 {" "}
@@ -160,6 +158,7 @@ const Header = (props) => {
                                 </div>
                             </div>
                         </div>
+                        */}
                     </div>
                 </div>
             </nav>
@@ -175,4 +174,4 @@ const mapStateToProps = (state) => {
 };
 
 
-export default connect(mapStateToProps, { removeFromCart })(Header);
+export default connect(mapStateToProps)(Header);

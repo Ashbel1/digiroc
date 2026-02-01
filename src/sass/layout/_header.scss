@@ -51,13 +51,7 @@
 		}
 
 		> ul > .menu-item-has-children > a:before {
-			font-family: "themify";
-			content: "\e61a";
-			font-size: 8px;
-			font-size: calc-rem-value(8);
-			position: absolute;
-			right: 2px;
-			top: 46%;
+			display: none;
 		}
 
 		@include widther(1200px) {
@@ -81,7 +75,7 @@
 			}
 
 			> ul .sub-menu {
-				background-color: $white;
+				background-color: $theme-primary-color;
 				width: 220px;
 				text-align: left;
 				padding: 10px 25px;
@@ -97,7 +91,7 @@
 			}
 
 			> ul > li .sub-menu li {
-				border-bottom: 1px solid lighten($black, 95%);
+				border-bottom: 1px solid rgba($white, 0.1);
 			}
 
 			> ul > li .sub-menu li:last-child {
@@ -107,7 +101,7 @@
 			> ul > li .sub-menu a {
 				display: block;
 				padding: 10px 0;
-				color: $heading-color;
+				color: $white;
 				font-size: 14px;
 				font-size: calc-rem-value(14);
 			}
