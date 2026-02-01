@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  max-width: 170px;
+  @media (max-width: 767px) {
+    text-align: center;
+    margin: auto;
+  }
+
+  a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-left: 4px solid #001C4A;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-left: 4px solid #001C4A;
+      background-color: rgba(0, 28, 74, 0.05);
+    }
+  }
+}
