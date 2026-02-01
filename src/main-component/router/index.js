@@ -2,10 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
-import HomePage2 from '../HomePage2/HomePage2';
-import HomePage3 from '../HomePage3/HomePage3';
-import HomePage4 from '../HomePage4/HomePage4';
-import HomePage5 from '../HomePage5/HomePage5';
 import AboutPage from '../AboutPage/AboutPage';
 import ServicePage from '../ServicePage/ServicePage';
 import ServicePageS2 from '../ServicePageS2/ServicePageS2';

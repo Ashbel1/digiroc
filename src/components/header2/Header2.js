@@ -1,19 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import MobileMenu from '../MobileMenu/MobileMenu'
-import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 // import { removeFromCart } from "../../store/actions/action";
 import Logo from '../../images/logo.png'
 
 const Header2 = (props) => {
-    const [menuActive, setMenuState] = useState(false);
     // const [cartActive, setcartState] = useState(false);
-
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
