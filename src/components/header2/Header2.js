@@ -41,7 +41,7 @@ const Header2 = (props) => {
                                 <Link onClick={ClickHandler} to="/deployments">Deployments</Link>
                             </li>
                             <li>
-                                <Link onClick={ClickHandler} to="/team">Team</Link>
+                                <Link onClick={ClickHandler} to="/partners">Partners</Link>
                             </li>
                             <li>
                                 <Link onClick={ClickHandler} to="/articles">Articles</Link>

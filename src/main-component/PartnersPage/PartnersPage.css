@@ -1,0 +1,217 @@
+.partners-content-section {
+    padding: 40px 0 30px 0;
+    background: #fff;
+}
+
+.partners-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.partners-intro h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.partners-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.vendor-partnerships-section {
+    background: #f8f9fa;
+    padding: 30px 0 50px 0;
+}
+
+.vendor-partnerships-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.vendor-partnerships-section .section-title span {
+    color: #e74c3c;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.vendor-partnerships-section .section-title h2 {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+    font-weight: 700;
+}
+
+.vendor-card {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.vendor-card.slide-up {
+    animation: slideUp 0.6s ease forwards;
+}
+
+.vendor-card.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.vendor-card.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.vendor-card.delay-3 {
+    animation-delay: 0.3s;
+}
+
+.vendor-card.delay-4 {
+    animation-delay: 0.4s;
+}
+
+.vendor-card.delay-5 {
+    animation-delay: 0.5s;
+}
+
+.vendor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.vendor-card .vendor-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.vendor-card:hover .vendor-icon {
+    transform: rotateY(360deg);
+}
+
+.vendor-card .vendor-icon i {
+    font-size: 32px;
+    color: #fff;
+}
+
+.vendor-card h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.vendor-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vendor-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vendor-card ul li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    padding-left: 22px;
+}
+
+.vendor-card ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .vendor-partnerships-section {
+        padding: 25px 0 40px 0;
+    }
+    
+    .partners-intro h2 {
+        font-size: 26px;
+    }
+    
+    .vendor-partnerships-section .section-title h2 {
+        font-size: 28px;
+    }
+    
+    .vendor-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners-content-section {
+        padding: 30px 0 20px 0;
+    }
+    
+    .partners-intro h2 {
+        font-size: 22px;
+    }
+    
+    .vendor-partnerships-section {
+        padding: 20px 0 30px 0;
+    }
+    
+    .vendor-partnerships-section .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .vendor-card h4 {
+        font-size: 18px;
+    }
+}

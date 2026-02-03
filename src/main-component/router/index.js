@@ -10,7 +10,7 @@ import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
 import ProjectPage from '../ProjectPage/ProjectPage';
 import ProjectPageS2 from '../ProjectPageS2/ProjectPageS2';
 import ProjectSinglePage from '../ProjectSinglePage/ProjectSinglePage';
-import TeamPage from '../TeamPage/TeamPage';
+import PartnersPage from '../PartnersPage/PartnersPage';
 import TeamSinglePage from '../TeamSinglePage/TeamSinglePage';
 import ShopPage from '../ShopPage'
 import ProductSinglePage from '../ProductSinglePage';
@@ -52,7 +52,7 @@ const AllRoute = () => {
           <Route path="deployment/:slug" element={<ProjectSinglePage />} />
           <Route path="team-member/:slug" element={<TeamSinglePage />} />
           <Route path="testimonials" element={<TestimonialPage />} />
-          <Route path="team" element={<TeamPage />} />
+          <Route path="partners" element={<PartnersPage />} />
           <Route path="shop" element={<ShopPage />} />
           <Route path='product-single/:slug' element={<ProductSinglePage />} />
           <Route path='cart' element={<CartPage />} />
