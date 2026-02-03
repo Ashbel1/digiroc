@@ -1,6 +1,5 @@
 import React from 'react'
 import abimg from '../../images/slider/one.jpg'
-import VideoModal from '../ModalVideo/VideoModal'
 
 
 const About2 = (props) => {
@@ -25,7 +24,6 @@ const About2 = (props) => {
                             <div className="experience-text">
                                 Enterprise-Ready <span>IT Distribution</span>
                             </div>
-                            <VideoModal />
                         </div>
                     </div>
                 </div>

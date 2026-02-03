@@ -26,13 +26,14 @@ import BlogDetailsFull from '../BlogDetailsFull/BlogDetailsFull'
 import ContactPage from '../ContactPage/ContactPage';
 import TestimonialPage from '../TestimonialPage/TestimonialPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
+import ComingSoonPage from '../ComingSoonPage/ComingSoonPage';
 
 
 const AllRoute = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
@@ -64,6 +65,7 @@ const AllRoute = () => {
           <Route path='article-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
           <Route path='article-full/:slug' element={<BlogDetailsFull />} />
           <Route path='contact' element={<ContactPage />} />
+          <Route path='coming-soon' element={<ComingSoonPage />} />
           <Route path='404' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

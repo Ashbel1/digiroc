@@ -2,19 +2,20 @@ import React from 'react'
 
 const WorkProcess = (props) => {
     return (
-        <section className="work-process-section section-padding">
+        <section className="work-process-section section-padding" style={{paddingTop: '60px'}}>
             <div className="container">
                 <div className="row">
                     <div className="col col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <div className="section-title">
+                        <div className="section-title" style={{marginBottom: '150px', paddingBottom: '40px'}}>
                             <span>Our work process</span>
-                            <h3>From requirements to rollout, Digiroc delivers end-to-end IT distribution and enterprise solutions that keep organizations secure, connected, and productive.</h3>
+                            <h2>How We Work For Our Clients</h2>
+                            <p>At Digiroc, our work process is designed to ensure seamless delivery of IT distribution and solutions that meet your enterprise needs. Here's how we work for our clients:</p>
                         </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col col col-lg-10 offset-lg-1">
-                        <div className="work-process-grids clearfix">
+                        <div className="work-process-grids clearfix" style={{marginTop: '60px', paddingTop: '35px', clear: 'both'}}>
                             <div className="grid">
                                 <div className="icon">
                                     <i className="fi flaticon-idea"></i>

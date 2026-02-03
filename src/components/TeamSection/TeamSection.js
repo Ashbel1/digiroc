@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import Team from '../../api/team'
-import ModalVideo from 'react-modal-video'
+import { ShimmerList } from '../Shimmer/Shimmer'
+import { fadeInUp, fadeInDown, staggerContainer, imageHover } from '../../utils/animations'
 
 
 const ClickHandler = () => {
@@ -9,8 +11,30 @@ const ClickHandler = () => {
 }
 
 const TeamSection = (props) => {
+    const [loading, setLoading] = useState(true);
 
-    const [isOpen, setOpen] = useState(false)
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return (
+            <section className="cta-with-team-section section-padding">
+                <div className="container">
+                    <div className="team-section">
+                        <div className="row">
+                            <div className="col col-xs-12">
+                                <div className="team-grids clearfix">
+                                    <ShimmerList count={4} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
 
     return (
         <section className="cta-with-team-section section-padding">
@@ -18,49 +42,79 @@ const TeamSection = (props) => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col col-xl-8 col-lg-10">
-                        <div className="cta-content">
-                            <div className="video-holder">
-                                <button className="btn-wrap" onClick={() => setOpen(true)}><i className="fi flaticon-video-player" aria-hidden="true"></i><span>See how Digiroc delivers</span></button>
-                            </div>
+                        <motion.div 
+                            className="cta-content"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            variants={fadeInDown}
+                        >
                             <h3>We deliver enterprise IT distribution, cloud enablement, and infrastructure services across Africa</h3>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 <div className="team-section">
                     <div className="row">
                         <div className="col col-lg-6 col-12">
-                            <div className="section-title-s4">
+                            <motion.div 
+                                className="section-title-s4"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                variants={fadeInUp}
+                            >
                                 <span>Team members</span>
                                 <h2>Meet the Digiroc <br />delivery team</h2>
-                            </div>
+                            </motion.div>
                         </div>
                         <div className="col col-lg-6 col-12">
-                            <div className="title-text">
+                            <motion.div 
+                                className="title-text"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                variants={fadeInUp}
+                                transition={{ delay: 0.2 }}
+                            >
                                 <p>Our team brings hands-on expertise in IT distribution, enterprise platforms, storage, networking, and deployment support to keep your organization running reliably.</p>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
-                    <div className="row">
+                    <motion.div 
+                        className="row"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={staggerContainer}
+                    >
                         <div className="col col-xs-12">
                             <div className="team-grids clearfix">
                                 {Team.map((team, aitem) => (
-                                    <div className="grid" key={aitem}>
-                                        <div className="img-holder">
+                                    <motion.div 
+                                        className="grid" 
+                                        key={aitem}
+                                        variants={fadeInUp}
+                                        whileHover={{ y: -10, transition: { duration: 0.3 } }}
+                                    >
+                                        <motion.div 
+                                            className="img-holder"
+                                            whileHover={imageHover}
+                                            style={{ overflow: 'hidden', borderRadius: '8px' }}
+                                        >
                                             <img src={team.tImg} alt="" />
-                                        </div>
+                                        </motion.div>
                                         <div className="details">
                                             <h5><Link onClick={ClickHandler} to={`/team-member/${team.slug}`}>{team.name}</Link></h5>
                                             <span>{team.title}</span>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
 
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
-            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="7e90gBu4pas" onClose={() => setOpen(false)} />
         </section>
     )
 }

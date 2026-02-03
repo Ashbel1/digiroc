@@ -48,19 +48,19 @@ const BlogSingle = (props) => {
                                 <div className="tag">
                                     Tags: &nbsp;
                                     <ul>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">IT Distribution</Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Cloud</Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Storage</Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Enterprise</Link></li>
+                                        <li><Link to="/articles">IT Distribution</Link></li>
+                                        <li><Link to="/articles">Cloud</Link></li>
+                                        <li><Link to="/articles">Storage</Link></li>
+                                        <li><Link to="/articles">Enterprise</Link></li>
                                     </ul>
                                 </div>
                                 <div className="share">
                                     Share: &nbsp;
                                     <ul>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
-                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
+                                        <li><Link to="/coming-soon"><i className="ti-facebook"></i></Link></li>
+                                        <li><Link to="/coming-soon"><i className="ti-twitter-alt"></i></Link></li>
+                                        <li><Link to="/coming-soon"><i className="ti-linkedin"></i></Link></li>
+                                        <li><Link to="/coming-soon"><i className="ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -74,10 +74,10 @@ const BlogSingle = (props) => {
                                     <p>We share practical guidance on IT distribution, enterprise platforms, and infrastructure strategy for organizations across Africa.</p>
                                     <div className="socials">
                                         <ul className="social-link">
-                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
-                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
-                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
-                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
+                                            <li><Link to="/coming-soon"><i className="ti-facebook"></i></Link></li>
+                                            <li><Link to="/coming-soon"><i className="ti-twitter-alt"></i></Link></li>
+                                            <li><Link to="/coming-soon"><i className="ti-linkedin"></i></Link></li>
+                                            <li><Link to="/coming-soon"><i className="ti-instagram"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -85,12 +85,12 @@ const BlogSingle = (props) => {
 
                             <div className="more-posts">
                                 <div className="previous-post">
-                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa">
+                                    <Link to="/coming-soon">
                                         <span className="post-control-link"><i className="ti-arrow-circle-left"> </i>Previous post</span>
                                     </Link>
                                 </div>
                                 <div className="next-post">
-                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa">
+                                    <Link to="/coming-soon">
                                         <span className="post-control-link">Next post <i className="ti-arrow-circle-right"></i></span>
                                     </Link>
                                 </div>

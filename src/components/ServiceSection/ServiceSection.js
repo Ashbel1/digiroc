@@ -1,6 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
 import Services from '../../api/service'
+import { fadeInUp, fadeInDown, staggerContainer, buttonHover, buttonTap } from '../../utils/animations';
 
 
 const ClickHandler = () => {
@@ -13,28 +15,49 @@ const ServiceSection = () => {
             <div className="container">
                 <div className="row">
                     <div className="col col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <div className="section-title-s3">
+                        <motion.div 
+                            className="section-title-s3"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.3 }}
+                            variants={fadeInDown}
+                        >
                             <span>About Digiroc</span>
                             <h2>Enterprise IT Distribution & Solutions</h2>
                             <p>Digiroc Technologies supplies hardware, software, and enterprise platforms across Africa. We enable secure deployment of Azure, AWS, Microsoft 365, storage, networking, and security solutions with reliable logistics and lifecycle support.</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
-                <div className="row">
+                <motion.div 
+                    className="row"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={staggerContainer}
+                >
                     <div className="col col-xs-12">
                         <div className="services-grids clearfix">
                             {Services.map((service, srv) => (
-                                <div className="grid" key={srv}>
+                                <motion.div 
+                                    className="grid" 
+                                    key={srv}
+                                    variants={fadeInUp}
+                                    whileHover={{ y: -10, transition: { duration: 0.3 } }}
+                                >
                                     <div className="icon">
                                         <i className={`fi ${service.icon}`}></i>
                                     </div>
-                                    <h3><Link onClick={ClickHandler} to={`/solution/${service.slug}`}>{service.sTitle}</Link></h3>
+                                    <h3>
+                                        <Link onClick={ClickHandler} to={`/solution/${service.slug}`}>
+                                            {service.sTitle}
+                                        </Link>
+                                    </h3>
                                     <p>{service.description}</p>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

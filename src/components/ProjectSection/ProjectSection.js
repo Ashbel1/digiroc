@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Projects from '../../api/project'
 import { Link } from "react-router-dom";
+import { ShimmerList } from '../Shimmer/Shimmer';
+import { fadeInUp, imageHover } from '../../utils/animations';
 
 const settings = {
     dots: true,
@@ -80,16 +83,46 @@ const ClickHandler = () => {
 }
 
 const ProjectSection = (props) => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1200);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return (
+            <section className={`projects-section ${props.prClass}`}>
+                <div className="content-area">
+                    <div className="container">
+                        <ShimmerList count={3} />
+                    </div>
+                </div>
+            </section>
+        );
+    }
+
     return (
         <section className={`projects-section ${props.prClass}`}>
             <div className="content-area">
                 <div className="project-grids projects-slider">
                     <Slider {...settings}>
                         {Projects.slice(0, 4).map((project, prj) => (
-                            <div className="grid" key={prj}>
-                                <div className="img-holder">
+                            <motion.div 
+                                className="grid" 
+                                key={prj}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true }}
+                                variants={fadeInUp}
+                            >
+                                <motion.div 
+                                    className="img-holder"
+                                    whileHover={imageHover}
+                                    style={{ overflow: 'hidden' }}
+                                >
                                     <img src={project.pImg} alt="project" className="img img-responsive" />
-                                </div>
+                                </motion.div>
                                 <div className="hover-content">
                                     <div className="top-link">
                                         <Link onClick={ClickHandler} to={`/deployment/${project.slug}`}><i className="fi flaticon-next"></i></Link>
@@ -99,7 +132,7 @@ const ProjectSection = (props) => {
                                         <p className="cat">{project.subTitle}</p>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </Slider>
                 </div>

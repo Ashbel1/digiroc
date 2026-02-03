@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom'
 import Footer from '../../components/footer/Footer';
 import { Link } from 'react-router-dom'
 import Services from '../../api/service'
-import ServiceTab from './ServiceTab';
 import Logo from '../../images/logo.png'
 
 
@@ -24,6 +23,19 @@ const ServiceSinglePage = (props) => {
     const { slug } = useParams()
 
     const ServiceDetails = Services.find(item => item.slug === slug)
+    const [activeService, setActiveService] = useState(slug)
+    const [fadeIn, setFadeIn] = useState(true)
+
+    const handleServiceClick = (e, serviceSlug) => {
+        e.preventDefault()
+        setFadeIn(false)
+        setTimeout(() => {
+            setActiveService(serviceSlug)
+            setFadeIn(true)
+        }, 300)
+    }
+
+    const currentService = Services.find(item => item.slug === activeService) || ServiceDetails
 
     return (
         <Fragment>
@@ -34,16 +46,16 @@ const ServiceSinglePage = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col col-lg-9 order-lg-2 order-1 col-12">
-                            <div className="service-single-content">
+                            <div className={`service-single-content ${fadeIn ? 'fade-in' : 'fade-out'}`}>
                                 <div className="service-pic">
-                                    <img src={ServiceDetails.sImg} alt="" />
+                                    <img src={currentService.sImg} alt="" />
                                 </div>
-                                <h2>{ServiceDetails.sTitle}</h2>
-                                <p>Digiroc delivers enterprise-grade IT distribution and solutions tailored to your operational needs. We provide reliable access to hardware, software, and cloud platforms while ensuring secure deployment, compliance, and ongoing support.</p>
-                                <p>From procurement to rollout, we coordinate vendor partnerships, licensing, logistics, and implementation so your teams can operate without disruption.</p>
+                                <h2>{currentService.sTitle}</h2>
+                                <p>{currentService.description}</p>
+                                <p>{currentService.des2}</p>
 
                                 <h3>Enterprise Delivery Capabilities</h3>
-                                <p>We cover sourcing, logistics, architecture, deployment, and lifecycle services to keep your technology stack secure, scalable, and available.</p>
+                                <p>{currentService.des3}</p>
                                 <div className="service-features">
                                     <ul>
                                         <li><i className="ti-check-box"></i>Vendor sourcing & procurement</li>
@@ -56,8 +68,6 @@ const ServiceSinglePage = (props) => {
                                         <li><i className="ti-check-box"></i>Lifecycle support & warranty</li>
                                     </ul>
                                 </div>
-
-                                <ServiceTab />
 
                                 <div className="request-service">
                                     <h3>Request this service</h3>
@@ -84,7 +94,11 @@ const ServiceSinglePage = (props) => {
                                     <ul>
                                         <li className="current"><Link to="/solutions">All Solutions</Link></li>
                                         {Services.map((service, srv) => (
-                                            <li key={srv}><Link onClick={ClickHandler} to={`/solution/${service.slug}`}>{service.sTitle}</Link></li>
+                                            <li key={srv} className={activeService === service.slug ? 'current' : ''}>
+                                                <a href="#" onClick={(e) => handleServiceClick(e, service.slug)}>
+                                                    {service.sTitle}
+                                                </a>
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>

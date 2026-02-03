@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import BlogSidebar from '../BlogSidebar/BlogSidebar.js'
-import VideoModal from '../ModalVideo/VideoModal'
 
 import blogs from '../../api/blogs'
 
@@ -21,16 +20,15 @@ const BlogList = (props) => {
                                 <div className={`post  ${blog.blClass}`} key={bitem}>
                                     <div className="entry-media">
                                         <img src={blog.blogSingleImg} alt="" />
-                                        <VideoModal />
                                     </div>
                                     <ul className="entry-meta">
-                                        <li><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.author}</Link></li>
-                                        <li><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.create_at}</Link></li>
-                                        <li><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.comment} Comments</Link></li>
+                                        <li><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.author}</Link></li>
+                                        <li><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.create_at}</Link></li>
+                                        <li><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.comment} Comments</Link></li>
                                     </ul>
-                                    <h3><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.title}.</Link></h3>
+                                    <h3><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.title}.</Link></h3>
                                     <p>Discover insights on IT distribution, enterprise platforms, storage, security, and cloud adoption. Digiroc Technologies shares practical guidance for organizations building reliable infrastructure across Africa.</p>
-                                    <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`} className="more">Read More</Link>
+                                    <Link onClick={ClickHandler} to={`/article/${blog.slug}`} className="more">Read More</Link>
                                 </div>
                             ))}
 
