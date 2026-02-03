@@ -31,59 +31,24 @@ const Header2 = (props) => {
                             <li>
                                 <Link onClick={ClickHandler} to="/">Home</Link>
                             </li>
-                            <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Pages</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/testimonials">Testimonials</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/team-single/Morkal-Akunda">Team Single</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/404">404</Link></li>
-                                    {/* Shop menu - Cart functionality disabled for now
-                                    <li className="menu-item-has-children">
-                                        <Link onClick={ClickHandler} to="/">Shop</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link onClick={ClickHandler} to="/shop">Shop Page</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/product-single/Blue-Striped-Shoes">Shop single</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
-                                        </ul>
-                                    </li>
-                                    */}
-                                </ul>
+                            <li>
+                                <Link onClick={ClickHandler} to="/about">About</Link>
                             </li>
-                            <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Services</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/services">All Services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/services-s2">Solutions Grid</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-s3">Service Highlights</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/IT-Distribution">IT Distribution & Supply Chain</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/Enterprise-Cloud">Enterprise Cloud & Productivity</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service-single/Data-Storage-Infrastructure">Data Storage & Infrastructure</Link></li>
-                                </ul>
+                            <li>
+                                <Link onClick={ClickHandler} to="/solutions">Solutions</Link>
                             </li>
-                            <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Projects</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/projects">Deployments</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/projects-s2">Deployment Grid</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project-single/Enterprise-Hardware-Rollout">Featured Deployment</Link></li>
-                                </ul>
+                            <li>
+                                <Link onClick={ClickHandler} to="/deployments">Deployments</Link>
                             </li>
-                            <li className="menu-item-has-children">
-                                <Link onClick={ClickHandler} to="/">Blog</Link>
-                                <ul className="sub-menu">
-                                    <li><Link onClick={ClickHandler} to="/blog">Insights</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Insights (Left)</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog-fullwidth">Insights (Full)</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog-single/Building-resilient-it-supply-chains-in-africa">Featured Insight</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/Building-resilient-it-supply-chains-in-africa">Featured Insight (Left)</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Building-resilient-it-supply-chains-in-africa">Featured Insight (Full)</Link></li>
-                                </ul>
+                            <li>
+                                <Link onClick={ClickHandler} to="/team">Team</Link>
                             </li>
-                            <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                            <li>
+                                <Link onClick={ClickHandler} to="/articles">Articles</Link>
+                            </li>
+                            <li>
+                                <Link onClick={ClickHandler} to="/contact">Contact</Link>
+                            </li>
                         </ul>
                     </div>
 

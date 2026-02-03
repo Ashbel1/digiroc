@@ -37,15 +37,15 @@ const BlogList = (props) => {
                             <div className="pagination-wrapper pagination-wrapper-left">
                                 <ul className="pg-pagination">
                                     <li>
-                                        <Link to="/blog-left-sidebar" aria-label="Previous">
-                                            <i className="fi ti-angle-left"></i>
+                                        <Link to="/articles-sidebar" aria-label="Previous">
+                                            <span aria-hidden="true">Prev</span>
                                         </Link>
                                     </li>
-                                    <li className="active"><Link to="/blog-left-sidebar">1</Link></li>
-                                    <li><Link to="/blog-left-sidebar">2</Link></li>
-                                    <li><Link to="/blog-left-sidebar">3</Link></li>
+                                    <li className="active"><Link to="/articles-sidebar">1</Link></li>
+                                    <li><Link to="/articles-sidebar">2</Link></li>
+                                    <li><Link to="/articles-sidebar">3</Link></li>
                                     <li>
-                                        <Link to="/blog-left-sidebar" aria-label="Next">
+                                        <Link to="/articles-sidebar" aria-label="Next">
                                             <i className="fi ti-angle-right"></i>
                                         </Link>
                                     </li>

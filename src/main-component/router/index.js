@@ -42,14 +42,14 @@ const AllRoute = () => {
           <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} /> */}
           <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicePage />} />
-          <Route path="services-s2" element={<ServicePageS2 />} />
-          <Route path="service-s3" element={<ServicePageS3 />} />
-          <Route path="service-single/:slug" element={<ServiceSinglePage />} />
-          <Route path="projects" element={<ProjectPage />} />
-          <Route path="projects-s2" element={<ProjectPageS2 />} />
-          <Route path="project-single/:slug" element={<ProjectSinglePage />} />
-          <Route path="team-single/:slug" element={<TeamSinglePage />} />
+          <Route path="solutions" element={<ServicePage />} />
+          <Route path="solutions-grid" element={<ServicePageS2 />} />
+          <Route path="solution-highlights" element={<ServicePageS3 />} />
+          <Route path="solution/:slug" element={<ServiceSinglePage />} />
+          <Route path="deployments" element={<ProjectPage />} />
+          <Route path="deployments-grid" element={<ProjectPageS2 />} />
+          <Route path="deployment/:slug" element={<ProjectSinglePage />} />
+          <Route path="team-member/:slug" element={<TeamSinglePage />} />
           <Route path="testimonials" element={<TestimonialPage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="shop" element={<ShopPage />} />
@@ -57,12 +57,12 @@ const AllRoute = () => {
           <Route path='cart' element={<CartPage />} />
           <Route path='checkout' element={<CheckoutPage />} />
           <Route path='order_received' element={<OrderRecived />} />
-          <Route path='blog' element={<BlogPage />} />
-          <Route path='blog-left-sidebar' element={<BlogPageLeft />} />
-          <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
-          <Route path='blog-single/:slug' element={<BlogDetails />} />
-          <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
-          <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
+          <Route path='articles' element={<BlogPage />} />
+          <Route path='articles-sidebar' element={<BlogPageLeft />} />
+          <Route path='articles-full' element={<BlogPageFullwidth />} />
+          <Route path='article/:slug' element={<BlogDetails />} />
+          <Route path='article-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
+          <Route path='article-full/:slug' element={<BlogDetailsFull />} />
           <Route path='contact' element={<ContactPage />} />
           <Route path='404' element={<ErrorPage />} />
         </Routes>

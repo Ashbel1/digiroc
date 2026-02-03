@@ -34,7 +34,7 @@ const About3 = (props) => {
                                             and deployment support.</h5>
                                     </div>
                                 </div>
-                                <Link onClick={ClickHandler} className="theme-btn" to="/services">Our Services</Link>
+                                <Link onClick={ClickHandler} className="theme-btn" to="/solutions">Our Solutions</Link>
                             </div>
                         </div>
                     </div>

@@ -32,14 +32,14 @@ const Footer = (props) => {
                                 <ul>
                                     <li><Link onClick={ClickHandler} to="/about">About us</Link></li>
                                     <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/services">Case Studies</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/services">Our Services</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/deployments">Case Studies</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/solutions">Our Solutions</Link></li>
                                 </ul>
                                 <ul>
                                     <li><Link onClick={ClickHandler} to="/contact">Provacu Policy</Link></li>
                                     <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     <li><Link onClick={ClickHandler} to="/testimonials">Testimonials</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog">News</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/articles">News</Link></li>
                                 </ul>
                             </div>
                         </div>

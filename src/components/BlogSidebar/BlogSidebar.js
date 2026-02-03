@@ -37,7 +37,7 @@ const BlogSidebar = (props) => {
                     <h3>Post Categories</h3>
                     <ul>
                         {Services.slice(0, 6).map((service, Sitem) => (
-                            <li key={Sitem}><Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.sTitle}</Link></li>
+                            <li key={Sitem}><Link onClick={ClickHandler} to={`/solution/${service.slug}`}>{service.sTitle}</Link></li>
                         ))}
                     </ul>
                 </div>
@@ -50,7 +50,7 @@ const BlogSidebar = (props) => {
                                     <img src={blog.screens} alt="" />
                                 </div>
                                 <div className="details">
-                                    <h4><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.title}</Link></h4>
+                                    <h4><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.title}</Link></h4>
                                     <span className="date">{blog.create_at}</span>
                                 </div>
                             </div>
@@ -60,15 +60,15 @@ const BlogSidebar = (props) => {
                 <div className="widget tag-widget">
                     <h3>Tags</h3>
                     <ul>
-                        <li><Link onClick={ClickHandler} to="/blog">IT Distribution</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Cloud</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Microsoft 365</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Azure</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">AWS</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Storage</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Networking</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Security</Link></li>
-                        <li><Link onClick={ClickHandler} to="/blog">Enterprise</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">IT Distribution</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Cloud</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Microsoft 365</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Azure</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">AWS</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Storage</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Networking</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Security</Link></li>
+                        <li><Link onClick={ClickHandler} to="/articles">Enterprise</Link></li>
                     </ul>
                 </div>
             </div>

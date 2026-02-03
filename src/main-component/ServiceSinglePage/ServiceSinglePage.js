@@ -7,7 +7,7 @@ import Footer from '../../components/footer/Footer';
 import { Link } from 'react-router-dom'
 import Services from '../../api/service'
 import ServiceTab from './ServiceTab';
-import Logo from '../../images/logo-2.png'
+import Logo from '../../images/logo.png'
 
 
 const ClickHandler = () => {
@@ -82,9 +82,9 @@ const ServiceSinglePage = (props) => {
                             <div className="service-sidebar">
                                 <div className="widget service-list-widget">
                                     <ul>
-                                        <li className="current"><Link to="/services">All Service</Link></li>
+                                        <li className="current"><Link to="/solutions">All Solutions</Link></li>
                                         {Services.map((service, srv) => (
-                                            <li key={srv}><Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.sTitle}</Link></li>
+                                            <li key={srv}><Link onClick={ClickHandler} to={`/solution/${service.slug}`}>{service.sTitle}</Link></li>
                                         ))}
                                     </ul>
                                 </div>

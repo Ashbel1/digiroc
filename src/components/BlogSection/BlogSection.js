@@ -36,7 +36,7 @@ const BlogSection = () => {
                                         <h4>{blog.create_day}</h4>
                                         <span>{blog.create_month} <br/>{blog.create_year}</span>
                                     </div>
-                                    <h3><Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.title}</Link></h3>
+                                    <h3><Link onClick={ClickHandler} to={`/article/${blog.slug}`}>{blog.title}</Link></h3>
                                 </div>
                             ))}
                         </div>

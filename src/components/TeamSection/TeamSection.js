@@ -49,7 +49,7 @@ const TeamSection = (props) => {
                                             <img src={team.tImg} alt="" />
                                         </div>
                                         <div className="details">
-                                            <h5><Link onClick={ClickHandler} to={`/team-single/${team.slug}`}>{team.name}</Link></h5>
+                                            <h5><Link onClick={ClickHandler} to={`/team-member/${team.slug}`}>{team.name}</Link></h5>
                                             <span>{team.title}</span>
                                         </div>
                                     </div>

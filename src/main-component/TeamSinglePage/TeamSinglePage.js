@@ -6,7 +6,7 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import { useParams } from 'react-router-dom'
 import Footer from '../../components/footer/Footer';
 import Team from '../../api/team'
-import Logo from '../../images/logo-2.png'
+import Logo from '../../images/logo.png'
 
 const TeamSinglePage = (props) => {
     const { slug } = useParams()
@@ -35,7 +35,7 @@ const TeamSinglePage = (props) => {
                                     <h3>Our teams</h3>
                                     <ul>
                                         {Team.map((team, aitem) => (
-                                            <li key={aitem}><Link onClick={ClickHandler} to={`/team-single/${team.slug}`}>{team.name}</Link></li>
+                                            <li key={aitem}><Link onClick={ClickHandler} to={`/team-member/${team.slug}`}>{team.name}</Link></li>
                                         ))}
                                     </ul>
                                 </div>

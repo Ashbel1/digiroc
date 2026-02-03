@@ -28,7 +28,7 @@ const ServiceSection = () => {
                                     <div className="icon">
                                         <i className={`fi ${service.icon}`}></i>
                                     </div>
-                                    <h3><Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>{service.sTitle}</Link></h3>
+                                    <h3><Link onClick={ClickHandler} to={`/solution/${service.slug}`}>{service.sTitle}</Link></h3>
                                     <p>{service.description}</p>
                                 </div>
                             ))}

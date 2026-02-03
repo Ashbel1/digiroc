@@ -92,7 +92,7 @@ const ProjectSection = (props) => {
                                 </div>
                                 <div className="hover-content">
                                     <div className="top-link">
-                                        <Link onClick={ClickHandler} to={`/project-single/${project.slug}`}><i className="fi flaticon-next"></i></Link>
+                                        <Link onClick={ClickHandler} to={`/deployment/${project.slug}`}><i className="fi flaticon-next"></i></Link>
                                     </div>
                                     <div className="details">
                                         <h3>{project.title}</h3>

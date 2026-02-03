@@ -4,7 +4,7 @@ import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import TeamSectionS2 from '../../components/TeamSectionS2/TeamSectionS2';
 import Footer from '../../components/footer/Footer';
-import Logo from '../../images/logo-2.png'
+import Logo from '../../images/logo.png'
 
 const TeamPage =() => {
     return(

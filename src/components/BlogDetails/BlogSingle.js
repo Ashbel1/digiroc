@@ -29,9 +29,9 @@ const BlogSingle = (props) => {
                                     <img src={BlogDetails.blogSingleImg} alt="" />
                                 </div>
                                 <ul className="entry-meta">
-                                    <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">{BlogDetails.author}</Link></li>
-                                    <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">{BlogDetails.create_at}</Link></li>
-                                    <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">{BlogDetails.comment} Comments</Link></li>
+                                    <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">{BlogDetails.author}</Link></li>
+                                    <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">{BlogDetails.create_at}</Link></li>
+                                    <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">{BlogDetails.comment} Comments</Link></li>
                                 </ul>
                                 <h2>{BlogDetails.title}</h2>
                                 <p>Reliable IT supply chains are critical for enterprise operations. Digiroc Technologies ensures authorized distribution and timely delivery of hardware, software, and infrastructure solutions across African markets.</p>
@@ -48,36 +48,36 @@ const BlogSingle = (props) => {
                                 <div className="tag">
                                     Tags: &nbsp;
                                     <ul>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">IT Distribution</Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">Cloud</Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">Storage</Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">Enterprise</Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">IT Distribution</Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Cloud</Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Storage</Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa">Enterprise</Link></li>
                                     </ul>
                                 </div>
                                 <div className="share">
                                     Share: &nbsp;
                                     <ul>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
-                                        <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
+                                        <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div className="author-box">
                                 <div className="author-avatar">
-                                    <Link to="/blog-single/Building-resilient-it-supply-chains-in-africa" target="_blank"><img src={blog6} alt="" /></Link>
+                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa" target="_blank"><img src={blog6} alt="" /></Link>
                                 </div>
                                 <div className="author-content">
-                                    <Link to="/blog-single/Building-resilient-it-supply-chains-in-africa" className="author-name">Author: Digiroc Technologies</Link>
+                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa" className="author-name">Author: Digiroc Technologies</Link>
                                     <p>We share practical guidance on IT distribution, enterprise platforms, and infrastructure strategy for organizations across Africa.</p>
                                     <div className="socials">
                                         <ul className="social-link">
-                                            <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
-                                            <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
-                                            <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
-                                            <li><Link to="/blog-single/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
+                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-facebook"></i></Link></li>
+                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-twitter-alt"></i></Link></li>
+                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-linkedin"></i></Link></li>
+                                            <li><Link to="/article/Building-resilient-it-supply-chains-in-africa"><i className="ti-instagram"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -85,12 +85,12 @@ const BlogSingle = (props) => {
 
                             <div className="more-posts">
                                 <div className="previous-post">
-                                    <Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">
+                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa">
                                         <span className="post-control-link"><i className="ti-arrow-circle-left"> </i>Previous post</span>
                                     </Link>
                                 </div>
                                 <div className="next-post">
-                                    <Link to="/blog-single/Building-resilient-it-supply-chains-in-africa">
+                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa">
                                         <span className="post-control-link">Next post <i className="ti-arrow-circle-right"></i></span>
                                     </Link>
                                 </div>
@@ -114,7 +114,7 @@ const BlogSingle = (props) => {
                                                         <div className="comment-area">
                                                             <p>Great service and timely delivery from Digiroc. The rollout was smooth and well supported.</p>
                                                             <div className="comments-reply">
-                                                                <Link className="comment-reply-link" to="/blog-single/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
+                                                                <Link className="comment-reply-link" to="/article/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -135,7 +135,7 @@ const BlogSingle = (props) => {
                                                                 <div className="comment-area">
                                                                     <p>Professional team and reliable logistics. Our procurement was seamless.</p>
                                                                     <div className="comments-reply">
-                                                                        <Link className="comment-reply-link" to="/blog-single/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
+                                                                        <Link className="comment-reply-link" to="/article/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -156,7 +156,7 @@ const BlogSingle = (props) => {
                                                                         <div className="comment-area">
                                                                             <p>Strong vendor access and clear communication throughout the deployment.</p>
                                                                             <div className="comments-reply">
-                                                                                <Link className="comment-reply-link" to="/blog-single/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
+                                                                                <Link className="comment-reply-link" to="/article/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -181,7 +181,7 @@ const BlogSingle = (props) => {
                                                         <div className="comment-area">
                                                             <p>Excellent support and warranty handling on our enterprise equipment.</p>
                                                             <div className="comments-reply">
-                                                                <Link className="comment-reply-link" to="/blog-single/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
+                                                                <Link className="comment-reply-link" to="/article/Building-resilient-it-supply-chains-in-africa"><span>Reply</span></Link>
                                                             </div>
                                                         </div>
                                                     </div>

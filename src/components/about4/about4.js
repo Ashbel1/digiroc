@@ -25,7 +25,7 @@ const About4 = (props) => {
                                             and deployment support.</h5>
                                     </div>
                                 </div>
-                                <Link onClick={ClickHandler} className="theme-btn" to="/services">Our Services</Link>
+                                <Link onClick={ClickHandler} className="theme-btn" to="/solutions">Our Solutions</Link>
                             </div>
                         </div>
                         <div className="col-xl-7 col-lg-6 col-md-12 col-12">
