@@ -95,9 +95,13 @@ const ServiceSinglePage = (props) => {
                                         <li className="current"><Link to="/solutions">All Solutions</Link></li>
                                         {Services.map((service, srv) => (
                                             <li key={srv} className={activeService === service.slug ? 'current' : ''}>
-                                                <a href="#" onClick={(e) => handleServiceClick(e, service.slug)}>
+                                                <button 
+                                                    type="button"
+                                                    onClick={(e) => handleServiceClick(e, service.slug)}
+                                                    style={{background: 'none', border: 'none', padding: 0, cursor: 'pointer', textAlign: 'left', width: '100%'}}
+                                                >
                                                     {service.sTitle}
-                                                </a>
+                                                </button>
                                             </li>
                                         ))}
                                     </ul>

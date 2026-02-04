@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import abimg from '../../images/about-2.jpg'
-import { fadeInLeft, fadeInRight, zoomIn } from '../../utils/animations'
+import { fadeInLeft, fadeInRight } from '../../utils/animations'
 
 
 const About = (props) => {

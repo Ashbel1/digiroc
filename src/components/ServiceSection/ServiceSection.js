@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
 import Services from '../../api/service'
-import { fadeInUp, fadeInDown, staggerContainer, buttonHover, buttonTap } from '../../utils/animations';
+import { fadeInUp, fadeInDown, staggerContainer } from '../../utils/animations';
 
 
 const ClickHandler = () => {
