@@ -3,9 +3,9 @@ import Navbar from '../../components/Navbar/Navbar'
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import FAQ from './faq'
-import tImg1 from '../../images/slider/one.jpg'
-import tImg2 from '../../images/slider/one.jpg'
-import tImg3 from '../../images/slider/one.jpg'
+import tImg1 from '../../images/terms/terms.jpg'
+import tImg2 from '../../images/terms/1.jpg'
+import tImg3 from '../../images/terms/2.jpg'
 import Footer from '../../components/Footer/Footer';
 
 const TermPage = (props) => {

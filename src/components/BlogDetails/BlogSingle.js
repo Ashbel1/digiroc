@@ -1,9 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import blog3 from '../../images/slider/one.jpg'
-import blog4 from '../../images/slider/one.jpg'
-import blog5 from '../../images/slider/one.jpg'
-import blog6 from '../../images/slider/one.jpg'
 import blogs from '../../api/blogs';
 import { useParams } from 'react-router-dom'
 import BlogSidebar from '../BlogSidebar/BlogSidebar.js'
@@ -67,7 +63,7 @@ const BlogSingle = (props) => {
 
                             <div className="author-box">
                                 <div className="author-avatar">
-                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa" target="_blank"><img src={blog6} alt="" /></Link>
+                                    <Link to="/article/Building-resilient-it-supply-chains-in-africa" target="_blank"><i className="ti-user"></i></Link>
                                 </div>
                                 <div className="author-content">
                                     <Link to="/article/Building-resilient-it-supply-chains-in-africa" className="author-name">Author: Digiroc Technologies</Link>
@@ -103,7 +99,7 @@ const BlogSingle = (props) => {
                                         <li className="comment even thread-even depth-1" id="comment-1">
                                             <div id="div-comment-1">
                                                 <div className="comment-theme">
-                                                    <div className="comment-image"><img src={blog3} alt="" /></div>
+                                                    <div className="comment-image"><i className="ti-user"></i></div>
                                                 </div>
                                                 <div className="comment-main-area">
                                                     <div className="comment-wrapper">
@@ -124,7 +120,7 @@ const BlogSingle = (props) => {
                                                 <li className="comment">
                                                     <div>
                                                         <div className="comment-theme">
-                                                            <div className="comment-image"><img src={blog4} alt="" /></div>
+                                                            <div className="comment-image"><i className="ti-user"></i></div>
                                                         </div>
                                                         <div className="comment-main-area">
                                                             <div className="comment-wrapper">
@@ -145,7 +141,7 @@ const BlogSingle = (props) => {
                                                         <li className="comment">
                                                             <div>
                                                                 <div className="comment-theme">
-                                                                    <div className="comment-image"><img src={blog5} alt="" /></div>
+                                                                    <div className="comment-image"><i className="ti-user"></i></div>
                                                                 </div>
                                                                 <div className="comment-main-area">
                                                                     <div className="comment-wrapper">
@@ -170,7 +166,7 @@ const BlogSingle = (props) => {
                                         <li className="comment">
                                             <div>
                                                 <div className="comment-theme">
-                                                    <div className="comment-image"><img src={blog3} alt="" /></div>
+                                                    <div className="comment-image"><i className="ti-user"></i></div>
                                                 </div>
                                                 <div className="comment-main-area">
                                                     <div className="comment-wrapper">

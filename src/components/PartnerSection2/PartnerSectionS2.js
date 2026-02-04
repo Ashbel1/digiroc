@@ -1,95 +1,24 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import pimg1 from '../../images/slider/one.jpg'
-import pimg2 from '../../images/slider/one.jpg'
-import pimg3 from '../../images/slider/one.jpg'
-import pimg4 from '../../images/slider/one.jpg'
-import pimg5 from '../../images/slider/one.jpg'
-
-const partners = [
-    {
-        pImg: pimg1,
-    },
-    {
-        pImg: pimg2,
-    },
-    {
-        pImg: pimg3,
-    },
-    {
-        pImg: pimg4,
-    },
-    {
-        pImg: pimg5,
-    },
-    {
-        pImg: pimg1,
-    },
-]
-
-const settings = {
-    dots: false,
-    arrows: false,
-    speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive: [
-        {
-            breakpoint: 1500,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-};
-
+import { Link } from 'react-router-dom'
 
 const PartnerSectionS2 = (props) => {
+
+    const ClickHandler = () => {
+        window.scrollTo(10, 0);
+    }
+
     return (
         <section className={`partners-section section-padding ${props.tNone}`}>
             <div className="container">
-                <div className="row">
-                    <div className="col col-xs-12">
-                        <div className="partner-grids partners-slider owl-carousel">
-                            <Slider {...settings}>
-                                {partners.map((partner, pitem) => (
-                                    <div className="grid" key={pitem}>
-                                        <img src={partner.pImg} alt="" />
-                                    </div>
-                                ))}
-                            </Slider>
+                <div className="row justify-content-center">
+                    <div className="col col-lg-8 col-12 text-center">
+                        <div className="section-title-s2">
+                            <span>Partner with Digiroc</span>
+                            <h2>Need enterprise IT solutions?</h2>
+                        </div>
+                        <div className="cta-text">
+                            <p>We deliver hardware and software distribution, cloud enablement, storage, networking, and enterprise support. Let's build a reliable, secure, and scalable IT foundation for your organization.</p>
+                            <Link onClick={ClickHandler} to="/contact" className="theme-btn-s2">Get In Touch</Link>
                         </div>
                     </div>
                 </div>

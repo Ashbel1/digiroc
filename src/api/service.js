@@ -1,9 +1,7 @@
-import simg from '../images/slider/one.jpg'
-// import simg2 from '../images/slider/one.jpg'
-import simg3 from '../images/slider/one.jpg'
-import simg4 from '../images/slider/one.jpg'
-// import simg5 from '../images/slider/one.jpg'
-// import simg6 from '../images/slider/one.jpg'
+import simg from '../images/service-single/img-1.jpg'
+import simg3 from '../images/service-single/img-3.jpg'
+import simg4 from '../images/service-single/img-4.jpg'
+
 
 
 const Services = [
@@ -17,16 +15,7 @@ const Services = [
         des3:'Ideal for enterprises, institutions, and resellers needing reliable supply and lifecycle support.',
         icon:'flaticon-sheriff',
     },
-    // {
-    //     Id: '2',
-    //     sImg:simg2,
-    //     sTitle:'Corporate Finance',
-    //     slug:'Corporate-Finance',
-    //     description:'Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of an illustrated magazine and',
-    //     des2:'Lacus, etiam sed est eu tempus need Temer diam congue laoret .',
-    //     des3:'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
-    //     icon:'flaticon-suitcase',
-    // },
+
     {
         Id: '3',
         sImg:simg3,
@@ -47,26 +36,7 @@ const Services = [
         des3:'Built for uptime, compliance, and growth.',
         icon:'flaticon-start',
     },
-    // {
-    //     Id: '5',
-    //     sImg:simg5,
-    //     sTitle:'Strategy & Marketing',
-    //     slug:'Strategy-Marketing',
-    //     description:'Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of an illustrated magazine and',
-    //     des2:'Lacus, etiam sed est eu tempus need Temer diam congue laoret .',
-    //     des3:'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
-    //     icon:'flaticon-chess-piece',
-    // },
-    // {
-    //     Id: '6',
-    //     sImg:simg6,
-    //     sTitle:'Sustainability',
-    //     slug:'Sustainability',
-    //     description:'Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of an illustrated magazine and',
-    //     des2:'Lacus, etiam sed est eu tempus need Temer diam congue laoret .',
-    //     des3:'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
-    //     icon:'flaticon-green-energy',
-    // }
+
 ]    
 
 export default Services;

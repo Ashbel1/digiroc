@@ -7,7 +7,6 @@ import ServiceSectionS2 from '../../components/ServiceSectionS2/ServiceSectionS2
 import Testimonial from '../../components/Testimonial/Testimonial';
 import ProjectSection2 from '../../components/ProjectSection2/ProjectSection2';
 import FunFact from '../../components/FunFact/FunFact';
-import TeamSection from '../../components/TeamSection/TeamSection';
 import PartnerSection from '../../components/PartnerSection/PartnerSection';
 import ContactSection from '../../components/ContactSection/ContactSection';
 import BlogSection from '../../components/BlogSection/BlogSection';
@@ -27,7 +26,6 @@ const HomePage3 = () => {
             <Testimonial />
             <ProjectSection2 />
             <FunFact />
-            <TeamSection />
             <PartnerSection />
             <ContactSection />
             <BlogSection />

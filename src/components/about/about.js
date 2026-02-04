@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import abimg from '../../images/slider/one.jpg'
+import abimg from '../../images/about-2.jpg'
 import { fadeInLeft, fadeInRight, zoomIn } from '../../utils/animations'
 
 

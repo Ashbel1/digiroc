@@ -1,9 +1,9 @@
-import pimg1 from '../images/slider/one.jpg'
-import pimg2 from '../images/slider/one.jpg'
-import pimg3 from '../images/slider/one.jpg'
-import pimg4 from '../images/slider/one.jpg'
-import pimg5 from '../images/slider/one.jpg'
-import pimg6 from '../images/slider/one.jpg'
+import pimg1 from '../images/projects/img-1.jpg'
+import pimg2 from '../images/projects/img-2.jpg'
+import pimg3 from '../images/projects/img-3.jpg'
+import pimg4 from '../images/projects/img-4.jpg'
+import pimg5 from '../images/projects/img-7.jpg'
+import pimg6 from '../images/projects/img-10.jpg'
 
 const Projects = [
     {

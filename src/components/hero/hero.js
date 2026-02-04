@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom'
-import hero1 from '../../images/slider/one.jpg'
-import hero2 from '../../images/slider/one.jpg'
-import hero3 from '../../images/slider/one.jpg'
+import hero1 from '../../images/slider/slide-1.jpg'
+import hero2 from '../../images/slider/slide-2.jpg'
+import hero3 from '../../images/slider/slide-3.jpg'
 
 
 const Hero = () => {
