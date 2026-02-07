@@ -9,7 +9,7 @@ const ContactSection = () => {
             <div className="content-area">
                 <div className="left-col">
                     <div className="contact-message">
-                        <h4>Don't hesitate to contact us. Phone: +263718911411, Email: info@digiroc.co.zw</h4>
+                        <h4>Don't hesitate to contact us. Phone: +263718911411, Email: digiroc.com</h4>
                     </div>
                 </div>
                 <div className="right-col">

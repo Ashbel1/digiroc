@@ -15,7 +15,7 @@ const About2 = (props) => {
                         <div className="about-content">
                             <h4>Reliable Supply. Secure Deployment.</h4>
                             <p>Digiroc Technologies delivers enterprise hardware and software distribution, cloud enablement, and infrastructure services. We help organizations deploy Microsoft, Azure, AWS, storage, and networking solutions with dependable logistics and lifecycle support.</p>
-                            <h5>Phone: +263718911411, Email: info@digiroc.co.zw</h5>
+                            <h5>Phone: +263718911411, Email: digiroc.com</h5>
                         </div>
                     </div>
                     <div className="col col-lg-6  col-12">
