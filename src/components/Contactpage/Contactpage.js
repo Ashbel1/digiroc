@@ -27,7 +27,7 @@ const Contactpage = () => {
                                     <i className="ti-email"></i>
                                 </div>
                                 <h5>Email</h5>
-                                <p>digiroc.com</p>
+                                <p>info@digiroc.com</p>
                             </div>
                             <div>
                                 <div className="icon">

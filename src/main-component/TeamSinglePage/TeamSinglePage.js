@@ -53,7 +53,7 @@ const TeamSinglePage = (props) => {
                                             <span>{TeamDetails.title}</span>
                                             <ul>
                                                 <li><i className="ti-mobile"></i><span>Phone: </span>+263718911411</li>
-                                                <li><i className="ti-email"></i><span>Email: </span>digiroc.com</li>
+                                                <li><i className="ti-email"></i><span>Email: </span>info@digiroc.com</li>
                                                 <li><i className="ti-timer"></i><span>Experience: </span>10+ Years</li>
                                                 <li><i className="ti-location-pin"></i><span>Address: </span>59 Ridgeway North, Highlands, Harare, Zimbabwe</li>
                                             </ul>

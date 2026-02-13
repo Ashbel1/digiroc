@@ -50,7 +50,7 @@ const Footer = (props) => {
                                 </div>
                                 <ul>
                                     <li>Phone: +263718911411 </li>
-                                    <li>Email: digiroc.com</li>
+                                    <li>Email: info@digiroc.com</li>
                                     <li>Office Time: 8AM- 5PM</li>
                                 </ul>
                             </div>

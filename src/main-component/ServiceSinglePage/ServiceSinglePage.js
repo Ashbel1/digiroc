@@ -125,7 +125,7 @@ const ServiceSinglePage = (props) => {
                                         <h4>Need help?</h4>
                                         <p>Contact our team to discuss hardware, software, cloud, or infrastructure requirements.</p>
                                         <p>Phone: +263718911411</p>
-                                        <p>Email: digiroc.com</p>
+                                        <p>Email: info@digiroc.com</p>
                                         <Link onClick={ClickHandler} to='/contact'>Contact With Us</Link>
                                     </div>
                                 </div>
